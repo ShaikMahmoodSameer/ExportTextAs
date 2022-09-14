@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>File Save as App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <img src="image1.png" alt="image">
+            <textarea name="txtArea" id="txtArea" cols="50" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam amet tempore libero dolore, expedita inventore dolorum modi dignissimos odio facere cupiditate nesciunt mollitia, dolorem fuga placeat! Reprehenderit veniam libero quis totam amet! Quasi, minima!</textarea>
+        </div>
+        <div class="inputs">
+            <div class="saveTitleWrapper">
+                <label for="savingTitle">Title : </label>
+                <input type="text" id="savingTitle" placeholder="file Title" value="document">
+            </div>
+            <div class="saveAsWrapper">
+                <label for="savingFileAs"> Save file As : </label>
+                <select name="save file as" id="savingFileAs">
+                    <option value="text/plain"> Text File (.txt) </option>
+                    <option value="text/javascript"> JS File (.js) </option>
+                    <option value="text/html"> HTML File (.html) </option>
+                    <option value="image/svg+xml"> SVG File (.svg) </option>
+                    <option value="application/msword"> DOC File (.doc) </option>
+                    <option value="application/vnd.ms-powerpoint"> PPT File (.ppt) </option>
+                </select>
+            </div>
+        </div>
+        <button id="saveBtn" type="button"> Save As Text File </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
